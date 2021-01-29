@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алина Курицына](https://up.htmlacademy.ru/htmlcss/30/user/1723687).
-* Наставник: `Неизвестно`.
+* Наставник: [Карина Карапетян](https://github.com/KarinaKarapetyanWeb).
 
 ---
 
