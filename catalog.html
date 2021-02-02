@@ -7,50 +7,48 @@
   <body>
     <header>
       <nav>
-        <a href="catalog.html">
-          <imj src="" width="159.87" height="65.02" alt="Логотип сайта дизайн-студии Нёрдс">
-          </ul>
+        <a href="index.html">
+        <img src="" width="159.87" height="65.02" alt="Логотип сайта дизайн-студии Нёрдс">
         </a>
         <ul>
           <li><a href="blank.html">Студия</a></li>
           <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="cattalog.html">Магазин</a></li>
+          <li><a href="">Магазин</a></li>
           <li><a href="blank.html">Контакты</a></li>
         </ul>
-        <ul>
-          <a href="blank.html">Карзина</a>
-        </ul>
+        <a href="blank.html">Карзина</a>
       </nav>
-    </header> 
+    </header>  
 
     <main>
       <section>
-        <h1>Магазин готовых шаблонов</h1>
+      <h2>Фильтры</h2>
         <form method="POST" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость:</legend>
-             <label>От<input type="number" name="min price" min="0" max="15000" value="0"></label>
-             <label>До<input type="number" name="max price" min="0" max="15000" value="15000"></label>
+            <div>
+              <label>От<input type="number" name="min price" min="0" max="15000" value="0"></label>
+              <label>До<input type="number" name="max price" min="0" max="15000" value="15000"></label>
+            </div>
           </fieldset>
 
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
               <li>
-                <input type="radio" name="product-group" value="adaptive" id="filtre-adaptive" checked>
-                <label for="filtre-adaptive">Адаптивная</label>
+                <input type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li>
-                <input type="radio" name="product-group" value="fixed" id="filtre-fixed">
-                <label for="filtre-fixed">Фиксированная</label>
+                <input type="radio" name="product-group" value="fixed" id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
               </li>
               <li>
-                <input type="radio" name="product-group" value="rubber" id="filtre-rubber">
-                <label for="filtre-rubber">Резиновая</label>
+                <input type="radio" name="product-group" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
-
 
           <fieldset>
             <legend>Особенности:</legend>
@@ -82,9 +80,7 @@
       </section>   
 
       <section>
-        <h2>Список шаблонов</h2>
-
-        <h3>Сортировать:</h3>
+        <h2>Сортировать:</h2>
         <ul>
           <li>
             <a href="catalog.html">По цене</a>
@@ -98,34 +94,65 @@
         </ul>
       </section>
       <section>
+        <h2>Список шаблонов</h2>
         <ul>
           <li>
             <img src="" width="" height="" alt="Шаблон информационного сайта городка Седона">
+            <div>
+              <h3>Sedona</h3>
+              <p>Информационный сайтдля туристов</p>
+              <a href="#">9900 &#8381;</a>
+            </div>
           </li>
         </ul>
         <ul>
           <li>
             <img src="" width="" height="" alt="Шаблон приложения Pink для смартфонов">
+            <div>
+              <h3>Pink App</h3>
+              <p>Продуктовый лендинг приложений для iOS и Android</p>
+              <a href="#">9900 &#8381;</a>
+            </div>
           </li>
         </ul>
         <ul>
           <li>
-            <img src="" width="" height="" alt="Шаблон   Барбершоп Бородинский">
+            <img src="" width="" height="" alt="Шаблон Барбершоп Бородинский">
+            <div>
+              <h3>Barbershop</h3>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <a href="#">9900 &#8381;</a>
+            </div>
           </li>
         </ul>
         <ul>
           <li>
-            <img src="" width="" height="" alt="Шаблон   магазина ручной работы Mishka">
+            <img src="" width="" height="" alt="Шаблон магазина ручной работы Mishka">
+            <div>
+              <h3>Mishka</h3>
+              <p>Интернет-магазин вязанных игрушек</p>
+              <a href="#">9900 &#8381;</a>
+            </div>
           </li>
         </ul>
         <ul>
           <li>
             <img src="" width="" height="" alt="Шаблон  учебных курсов">
+            <div>
+              <h3>A Plus</h3>
+              <p>Лендинг курсов повыщения квалификации</p>
+              <a href="#">9900 &#8381;</a>
+            </div>
           </li>
         </ul>
         <ul>
           <li>
             <img src="" width="" height="" alt="Шаблон  крафтового кваса">
+            <div>
+              <h3>Кваст</h3>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a href="#">9900 &#8381;</a>
+            </div>
           </li>
         </ul>
         <ul>
@@ -143,29 +170,25 @@
           </li>
         </ul>
       </section>
-
-
+    </main>
+    <div><h1>Магазин готовых шаблонов</h1></div>
+    
       <footer>
-
         <section>
           <h2>Как нас найти</h2>
-            <img src="" width="" height="" alt="карта">
-            <img src="" width="" height="" alt="Маркер с логотипом Нердс">
+          <img src="" width="" height="" alt="Карта с маркером  логотипа Нердс">
         </section>
 
         <section>
           <h2>Контактная информация</h2>
-             <p>NЁRDS DESIGN STUDIO<br>
-             <a href ="blank.html">Санкт-Петербург,<br> 
-             ул. Б. Конюшенная,д. 19/8</a><br>
-             тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-            </p><br>
-            <a href="">Напишите нам</a>
+              <p>NЁRDS DESIGN STUDIO<br>
+              Санкт-Петербург,<br> 
+              ул. Б. Конюшенная,д. 19/8</p>
+              <p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p> 
+          <a href="blank.html">Напишите нам</a>
       </section>
       
      <section>
-      <h2>Давайте дружить,это выгодно!<h2>
-        <p>Скидка 10% для друзей из социальных сетей</p>
        <ul>
          <li>
            <a href="#">Вконтакте</a>
@@ -177,8 +200,9 @@
           <a href="#">Инстаграм</a>
         </li>
        </ul>
+       <h2>Давайте дружить,это выгодно!<h2>
+        <p>Скидка 10% для друзей из социальных сетей</p>
      </section>
-
     </footer>
 
     <section>
@@ -197,7 +221,6 @@
       </form>
       <button type="submit">Отправить</button>
     </section>
-
     
  </body>
 </html>
