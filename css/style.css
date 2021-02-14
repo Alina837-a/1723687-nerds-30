@@ -21,6 +21,8 @@
     --special-bright-orange: #EAB534;
     --special-vivid-orange: #E5A722;
     --special-moderate-red: #D7373B; 
+    --special-very-light-gray: #dfdfdf;
+    --special-light-gray: #d5d5d5; 
  }
 
  /* Global */
@@ -36,6 +38,7 @@ body {
     color: var(--basic-very-dark-grayish-blue);
     background-color: var(--basic-white);
 }
+
 
 a {
     text-decoration: none;
@@ -55,7 +58,7 @@ img {
 }
 
 .main-navigation-wrapper{
-    background-color: var(--basic-light-grey)
+    background-color: var(--basic-light-grey);
 }
 
 .site-navigation {
@@ -85,7 +88,7 @@ img {
 
 /* Features */
 
-.features-wrapper {
+.features {
     background-color: var(--basic-light-grey) ;
 }
 
@@ -122,7 +125,7 @@ img {
 }
 
 .features-button:active {
-    opacity: 0,3;
+    opacity: 0.3;
     background-color: var(--special-moderate-red);
 }
 /* Market */
@@ -161,7 +164,7 @@ img {
 }
 
 .button-red:active {
-    opacity: 0,3;
+    opacity: 0.3;
     background-color: var(--special-moderate-red);
 }
 
@@ -175,7 +178,7 @@ img {
 }
 
 .button-green:active {
-    opacity: 0,3;
+    opacity: 0.3;
     background-color: var(--special-dark-green);
 }
 
@@ -189,7 +192,7 @@ img {
 }
 
 .button-yellow:active {
-    opacity: 0,3;
+    opacity: 0.3;
     background-color: var(--special-vivid-orange);
 }
 
@@ -259,6 +262,138 @@ img {
     opacity: 0.1;
 }
 
+.page-title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    background-color: var(--basic-light-grey);
+}
+
+/* Filtres*/
+
+.filtres {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.price {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--basic-very-dark-greyish-blue);
+}
+
+.filter-radio,
+.filter-checkbox {
+    list-style: none;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: none;
+    color: var(--basic-very-dark-greyish-blue);
+}
+
+.filter-button {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-black);
+    background-color: var(--basic-light-grey);
+}
+
+.filter-button:hover {
+    background-color: var(--special-very-light-gray);
+}
+
+.filter-button:focus {
+    background-color: var(--special-light-gray);
+}
+
+
+.sorting {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.sorting-list {
+    list-style: none;
+}
+
+.sorting-list a{
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-black);
+}
+
+.sorting-item-type a,
+.sorting-item-title a {
+    opacity: 0.3;
+}
+
+.sorting-list a:hover {
+    opacity: 0.6;
+}
+
+.sorting-list a:focus,
+.sorting-list a:active {
+    color: var(--basic-black);
+    opacity: 1;
+}
+
+/*Catalog*/
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-category {
+    background-color: var(--basic-light-grey);
+    text-align: center;
+}
+
+.catalog-category-title a {
+    color: var(--basic-black);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.catalog-category-title a:hover {
+    color: var(--basic-soft-red);
+}
+
+.catalog-category-title a:focus {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+.catalog-category-description{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-metallic);
+}
+
+.catalog-price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+    background-color: var(--basic-soft-red);
+}
+
+.catalog-price:hover {
+    background-color: var(--special-bright-red);
+}
+
+.catalog-price:focus {
+    background-color: var(--special-moderate-red);
+}
+
 /* Main footer */
 
 .map-wrapper {
@@ -310,6 +445,34 @@ img {
 
 .social-button {
     background-color: var(--basic-very-light-grey);
+}
+
+.pagination-list a {
+    list-style: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-black);
+    background-color: var(--basic-light-grey);
+}
+
+.pagination-list a:hover {
+    background-color: var(--special-very-light-gray);
+}
+
+.pagination-list a:focus {
+    opacity: 0.3;
+    background-color: var(--special-light-gray);
+}
+
+.pagination-list a:active{
+    background-color: var(--basic-white);
+    border: 3px solid #DBDBDB;
+}
+
+.pagination-item-current {
+    background-color: var(--basic-white);
+    border: 3px solid #DBDBDB;
 }
 
 /* modal */
