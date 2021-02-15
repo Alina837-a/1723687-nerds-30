@@ -28,7 +28,7 @@
  /* Global */
 
 body {
-    min-width: 1157px;
+    min-width: 1200px;
     margin: 0;
     padding: 0;
     font-family: "Roboto", "Arial", sans-serif;
@@ -37,6 +37,11 @@ body {
     font-weight:400;
     color: var(--basic-very-dark-grayish-blue);
     background-color: var(--basic-white);
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start
 }
 
 
@@ -49,6 +54,18 @@ img {
     height: auto;
 }
 
+/*Grids*/
+
+.page {
+    height: 100%;
+}
+
+/* Main header*/
+.main-header {
+    background-color: var(--basic-light-grey);
+}
+
+
 /* Main navigation*/
 
 .main-navigation {
@@ -58,7 +75,14 @@ img {
 }
 
 .main-navigation-wrapper{
+    display: grid;
+    grid-template-columns: 160px 1fr min-content;
     background-color: var(--basic-light-grey);
+    width: 1160px;
+    margin: 0 auto;
+    padding:0 10px;
+    justify-self: center;
+    align-items: center;
 }
 
 .site-navigation {
@@ -86,10 +110,31 @@ img {
     opacity: 0.3;
 }
 
+/* page-main */
+
+
+.page-main {
+    width: 100%;
+    margin: 0  auto;
+}
+
 /* Features */
 
-.features {
-    background-color: var(--basic-light-grey) ;
+.features-wrapper {
+    display: grid;
+    width: 100%;
+    min-height: 431px;
+    margin: 0  auto;
+    background-color: var(--basic-light-grey);
+
+}
+
+.features,
+.market,
+.index-columns,
+.model {
+    width: 1160px;
+    margin: 0 auto;
 }
 
 .features-list {
@@ -131,11 +176,20 @@ img {
 /* Market */
 
 .market-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    column-gap: 100px;
     list-style: none;
 }
 
 .market-item {
     text-align: left;
+}
+
+.market-item p {
+    margin: 0 10px;
 }
 
 .market-item h3 {
@@ -198,8 +252,12 @@ img {
 
 /* Index colums */
 
-.index-colums {
+.index-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     text-align: left;
+    margin-top: 40px;
+    margin-bottom: 70px;
 }
 
 /* Information */
@@ -246,6 +304,8 @@ img {
 /* Model */
 
 .model-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none;
 }
 
@@ -396,12 +456,21 @@ img {
 
 /* Main footer */
 
-.map-wrapper {
+.map {
+    width: 100%;
+    margin: 0  auto;
     background-color: var(--basic-light-grey);
 }
 
+.map-wrapper,
+.contacts ,
+.footer-social {
+    width: 1160px;
+    margin: 0 auto;
+}
 .contacts {
     text-align: left;
+    background-color: var(--basic-white);
 }
 
 .contacts-studio {
@@ -428,6 +497,10 @@ img {
     line-height: 18px;
     text-align: center;
     text-transform: uppercase
+}
+
+.social-item  {
+    list-style: none;
 }
 
 .footer-sale {
