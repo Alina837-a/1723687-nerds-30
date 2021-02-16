@@ -120,6 +120,8 @@ img {
     margin: 0  auto;
 }
 
+
+
 /* Features */
 
 .features-wrapper {
@@ -336,7 +338,10 @@ img {
     opacity: 0.1;
 }
 
-.page-title {
+.page-title h1{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
@@ -344,6 +349,14 @@ img {
 }
 
 /* Filtres*/
+
+.filtres,
+.sorting,
+.catalog {
+    width: 1160px;
+    margin: 0 auto;
+
+}
 
 .filtres {
     font-weight: bold;
@@ -472,10 +485,13 @@ img {
 
 /* Main footer */
 
+.map {
+    background-color: var(--basic-light-grey);
+}
+
 .map img{
     width: 100%;
     margin: 0  auto;
-    background-color: var(--basic-light-grey);
 }
 
 .contacts ,
