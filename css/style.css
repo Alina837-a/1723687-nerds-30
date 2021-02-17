@@ -338,6 +338,7 @@ img {
     opacity: 0.1;
 }
 
+
 .page-title h1{
     width: 100%;
     margin: 0 auto;
@@ -350,12 +351,13 @@ img {
 
 /* Filtres*/
 
-.filtres,
-.sorting,
-.catalog {
+.filtres-container {
+    display: grid;
+    grid-template-columns: 260px 760px;
+    column-gap: 140px;
     width: 1160px;
     margin: 0 auto;
-
+    padding:0 10px;
 }
 
 .filtres {
@@ -365,6 +367,7 @@ img {
     text-transform: uppercase;
     color: var(--basic-black);
 }
+
 
 .price {
     font-size: 16px;
@@ -379,6 +382,8 @@ img {
     line-height: 20px;
     text-transform: none;
     color: var(--basic-very-dark-greyish-blue);
+    margin: 0;
+    padding: 0;
 }
 
 .filter-button {
@@ -399,7 +404,7 @@ img {
 }
 
 
-.sorting {
+.sorting h2 {
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
@@ -417,6 +422,7 @@ img {
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-black);
+    text-transform: uppercase;
 }
 
 .sorting-item-type a,
@@ -438,6 +444,8 @@ img {
 
 .catalog-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .catalog-category {
@@ -563,6 +571,8 @@ img {
     line-height: 18px;
     color: var(--basic-black);
     background-color: var(--basic-light-grey);
+    margin: 0;
+    padding: 0;
 }
 
 .pagination-list a:hover {
