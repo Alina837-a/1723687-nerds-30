@@ -91,6 +91,10 @@ img {
     padding: 0;
 }
 
+.main-header-logo {
+    width: 160px;
+    height: 65px;
+}
 /* User navigation */
 
 .site-navigation a,
@@ -193,15 +197,15 @@ img {
     padding: 0;
     column-gap: 100px;
     list-style: none;
+    margin-bottom: 16px;
 }
 
 .market-item {
-    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
 }
 
-.market-item p {
-    margin: 0 10px;
-}
 
 .market-item h3 {
     font-size: 24px;
@@ -267,9 +271,6 @@ img {
     display: grid;
     grid-template-columns: 651px 360px;
     column-gap: 146px;
-    text-align: left;
-    margin-top: 40px;
-    margin-bottom: 70px;
 }
 
 /* Information */
@@ -278,13 +279,16 @@ img {
     color: var(--basic-black);
     font-weight: 500;
     font-size: 45px;
-    line-height: 45px
-    
+    line-height: 45px;
+    margin-top: 73px;
+    margin-bottom: 32px;    
 }
 
 .information-orders {
     text-transform: uppercase;
     font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 23px;
 }
 
 .information-list {
@@ -293,14 +297,30 @@ img {
     margin: 0;
 }
 
+.information-item {
+    margin-bottom: 39px;
+}
+
 
 /* Statistics */
+
+.statistics img {
+    width: 360px;
+    height: 208px;
+    margin-bottom: 37px;
+    margin-top: 39px;
+}
 
 .statistics-heading {
     color: var(--basic-black);
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
+    margin-bottom: 31px;
+}
+
+.statistics-list {
+    display: flex;
 }
 
 .statistics-term {
@@ -308,18 +328,23 @@ img {
     font-weight: 700;
     font-size: 45px;
     line-height: 64px;
+    margin-bottom: 10px;
+    margin-right: 22px;
 }
 
 .statistics-definition {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 18px;
+
 }
 
 /* Model */
 
 .model-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -368,6 +393,26 @@ img {
     color: var(--basic-black);
 }
 
+.filter fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin-bottom: 47px;
+}
+
+.filter legend {
+    margin-bottom: 16px;
+  }
+  
+  .filter ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .filter li {
+      margin-bottom: 20px;
+  }
 
 .price {
     font-size: 16px;
@@ -443,9 +488,37 @@ img {
 /*Catalog*/
 
 .catalog-list {
-    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    margin-bottom: 55px;
+    list-style: none;
+}
+
+.catalog-item {
+    width: 358px;
+    min-height: 578px;
+    margin-bottom: 32px;
+    margin-right: 41px;
+}
+
+.catalog-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+
+.catalog-item h3 {
+    margin-top: 26px;
+    margin-right: 144px;
+    margin-bottom: 12px;
+    margin-left: 145px;
+}
+
+.catalog-item p {
+    margin-right: 53px;
+    margin-bottom: 12px;
+    margin-left: 32px;
 }
 
 .catalog-category {
@@ -537,6 +610,7 @@ img {
     text-align: center;
     text-transform: uppercase
 }
+
 
 .social-list {
     padding: 0;
