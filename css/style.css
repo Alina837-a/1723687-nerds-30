@@ -571,6 +571,13 @@ img {
     opacity: 0.1;
 }
 
+.page-title {
+    padding: 0;
+    margin: 0;
+    padding-top: 78px;
+    padding-bottom: 108px;
+    background-color: var(--basic-light-grey);
+}
 
 .page-title h1{
     width: 100%;
@@ -579,7 +586,6 @@ img {
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
-    background-color: var(--basic-light-grey);
 }
 
 /* Filtres*/
@@ -590,7 +596,8 @@ img {
     column-gap: 140px;
     width: 1160px;
     margin: 0 auto;
-    padding:0 10px;
+    padding:0;
+    padding-top: 55px;
 }
 
 .filtres {
@@ -656,6 +663,12 @@ img {
     background-color: var(--special-light-gray);
 }
 
+.sorting {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 48px;
+}
 
 .sorting h2 {
     font-weight: bold;
@@ -663,15 +676,33 @@ img {
     line-height: 30px;
     text-transform: uppercase;
     color: var(--basic-black);
+    margin: 0;
+    padding: 0;
+    margin-right: 266px;
 }
 
 .sorting-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     list-style: none;
+   
+    margin: 0;
+    padding: 0;
+}
+
+.sorting-item {
+    padding: 0;
+    margin-right: 25px;
+}
+
+.sorting-item:nth-last-child(1) {
     margin: 0;
     padding: 0;
 }
 
 .sorting-list a{
+    font-weight: normal;
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-black);
@@ -683,11 +714,11 @@ img {
     opacity: 0.3;
 }
 
-.sorting-list a:hover {
+.sorting-list a:hover,
+.sorting-list a:focus {
     opacity: 0.6;
 }
 
-.sorting-list a:focus,
 .sorting-list a:active {
     color: var(--basic-black);
     opacity: 1;
@@ -715,6 +746,10 @@ img {
     margin-right: 0;
 }
 
+.catalog-header {
+    position: relative;
+    border: 40px ;
+}
 
 .catalog-item h3 {
     margin-top: 26px;
@@ -780,23 +815,21 @@ img {
 .map {
     background-color: var(--basic-light-grey);
     position: relative;
-    
+    width: 1160px;
+    margin: 0 auto;
 }
 
 .map img{
-    display: grid;
-    margin: 0 auto;
     position: absolute;
     width: 1440px;
     height: 416px;
-    transform: translate(551px, -14px);
+    top: 0;
+    left: 0;
 }
 
+
 .contacts {
-    width: 318px;
-    min-height: 308px;
-    position: absolute;
-    left: 687px;
+  position: relative;
 }
 
 .footer-social {
@@ -806,9 +839,11 @@ img {
 
 .map-wrapper {
     background-color: var(--basic-white);
-    padding-top: 21px;
-    padding-bottom: 88px;
-    padding-left: 49px;
+    width: 318px;
+    min-height: 308px;
+    position: absolute;
+    left: 140px;
+    top: 54px;
 }
 
 .contacts-studio {
@@ -819,6 +854,8 @@ img {
     text-transform: uppercase;
     padding: 0;
     margin: 0;
+    margin-left: 52px;
+    margin-top: 49px;
     margin-bottom: 22px;
 }
 
@@ -829,6 +866,7 @@ img {
     margin: 0;
     padding: 0;
     margin-bottom: 21px;
+    margin-left: 57px;
 }
 
 .phone
@@ -841,6 +879,7 @@ img {
     margin-bottom: 34px;
 }
 
+
 .contacts-button {
     color: var(--basic-white);
     display: inline-block;
@@ -851,6 +890,7 @@ img {
     text-align: center;
     text-transform: uppercase;
     margin: 0;
+    margin-left: 50px;
     padding: 14px 50px 19px 42px;
     border-radius: 3px;
 }
@@ -859,7 +899,9 @@ img {
     display: grid;
     grid-template-columns: 260px 544px;
     column-gap: 140px;
-    
+    padding-top: 480px;
+    padding-bottom: 68px;
+    margin-bottom: 8px;
 }
 
 .social-list {
@@ -870,8 +912,6 @@ img {
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-top: 68px;
-    margin-bottom: 68px;
 }
 
 .footer-sale {
@@ -879,15 +919,23 @@ img {
     font-size: 36px;
     line-height: 36px;
     color: var(--basic-black);
-    margin-top: 75px;
     margin-bottom: 10px;
+    margin: 0;
+    padding: 0;
 }
+
+.footer-sale h2 {
+    margin: 0;
+    padding: 0;
+}
+
 
 .social-sale {
     font-size: 16px;
     line-height: 22px;
     color: var(--basic-very-dark-grey);
-    margin-bottom: 75px;
+    padding: 0;
+    margin: 0;
 }
 
 .social-button {
