@@ -84,7 +84,7 @@ img {
 
 .main-navigation-wrapper{
     display: grid;
-    grid-template-columns: 160px 1fr min-content;
+    grid-template-columns: 160px 437px min-content;
     background-color: var(--basic-light-grey);
     width: 1160px;
     margin: 0 auto;
@@ -94,13 +94,11 @@ img {
     text-transform: uppercase; 
     font-weight: 500;
     padding-top: 48px;
-   /* padding-bottom: 10px;*/
 }
 
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
-    width: 437px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -242,6 +240,7 @@ img {
 .features-button {
     font: inherit;
     display: inline-block;
+    vertical-align: middle;
     text-align: center;
     color: var(--basic-white);
     font-weight: 500;
@@ -310,17 +309,21 @@ img {
 
 .slider-controls button:nth-last-child(1) {
     margin: 0;
-    padding: 0;
+}
+
+.current{
+    position: relative;
 }
 
 .slider-controls .current::before {
     content: "";
-    position: relative;
+    position: absolute;
     display: block;
     width: 8px;
     height: 8px;
     border: 2px solid var(--basic-grey);
     border-radius: 50%;
+    /*Добавить координаты*/
 }
 
 
@@ -384,6 +387,7 @@ img {
 .button-market {
     display: inline-block;
     color: var(--basic-white);
+    vertical-align: middle;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -516,9 +520,15 @@ img {
 }
 
 .statistics div {
-    margin-right: 22px;
+    margin-right: 1px;
+    width: 119px;
 }
 
+.statistics sup {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 40px;
+}
 .statistics div:nth-last-child(1){
     margin: 0;
 }
@@ -542,8 +552,12 @@ img {
 /* Model */
 .model {
     padding-top: 52px;
-    padding-bottom: 44px;
+    padding-bottom: 28px;
     border-bottom: 2px solid var(--basic-light-grey);
+}
+
+.model a{
+    display: block;
 }
 
 .model-list {
@@ -698,7 +712,6 @@ img {
 
 .sorting-item:nth-last-child(1) {
     margin: 0;
-    padding: 0;
 }
 
 .sorting-list a{
@@ -815,21 +828,23 @@ img {
 .map {
     background-color: var(--basic-light-grey);
     position: relative;
-    width: 1160px;
-    margin: 0 auto;
 }
 
 .map img{
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 416px;
-    top: 0;
-    left: 0;
+    top:0;
+    left:0;
 }
 
 
 .contacts {
   position: relative;
+  width: 319px;
+  min-height: 416px;
+  top: 54px;
+  margin: 0 auto;
 }
 
 .footer-social {
@@ -839,11 +854,8 @@ img {
 
 .map-wrapper {
     background-color: var(--basic-white);
-    width: 318px;
-    min-height: 308px;
     position: absolute;
-    left: 140px;
-    top: 54px;
+    padding: 49px 50px 47px 50px;
 }
 
 .contacts-studio {
@@ -854,8 +866,6 @@ img {
     text-transform: uppercase;
     padding: 0;
     margin: 0;
-    margin-left: 52px;
-    margin-top: 49px;
     margin-bottom: 22px;
 }
 
@@ -866,10 +876,17 @@ img {
     margin: 0;
     padding: 0;
     margin-bottom: 21px;
-    margin-left: 57px;
 }
 
-.phone
+.phone p{
+    color: var(--basic-metallic);
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 34px;
+}
+
 .contacts-phone  {
     color: var(--basic-metallic);
     font-size: 16px;
@@ -883,15 +900,14 @@ img {
 .contacts-button {
     color: var(--basic-white);
     display: inline-block;
+    vertical-align: middle;
     background-color: var(--basic-soft-red);
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0;
-    margin-left: 50px;
-    padding: 14px 50px 19px 42px;
+    padding: 17px 44px 15px 44px;
     border-radius: 3px;
 }
 
@@ -899,7 +915,7 @@ img {
     display: grid;
     grid-template-columns: 260px 544px;
     column-gap: 140px;
-    padding-top: 480px;
+    padding-top: 75px;
     padding-bottom: 68px;
     margin-bottom: 8px;
 }
