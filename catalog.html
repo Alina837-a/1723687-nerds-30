@@ -54,7 +54,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-grid">
             <legend>Сетка:</legend>
             <ul>
               <li class="filter-option filter-radio">
@@ -71,7 +71,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-features">
             <legend>Особенности:</legend>
               <ul>
                 <li class="filter-option filter-checkbox">
@@ -112,107 +112,74 @@
               <li class="sorting-item sorting-item-title">
                 <a href="catalog.html">По названию</a>
               </li>
-              <li class="sorting-item sorting-current">
-                <a href="catalog.html" class="sorting-button sorting-button-down">
-                  <span class="visually-hidden">Вниз</span>
-                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2"><path d="M5.5 10L0 0H11" fill="#A6A6A6"/></g></svg>
-                </a>
-              </li>
-              <li class="sorting-item">
-                <a href="catalog.html" class="sorting-button sorting-button-up">
-                  <span class="visually-hidden">Вверх</span>
-                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2"><path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/></g></svg> 
-                </a>
-              </li>
             </ul>
+            <ul class="arrow-list">
+              <li class="arrow-item arrow-current">
+                <a href="catalog.html" class="arrow-button arrow-button-down">
+                  <span class="visually-hidden">Вниз</span>
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M5.5 10L0 0H11" fill="#A6A6A6"/></g></svg>
+                </a>
+              </li>
+              <li class="arrow-item">
+                <a href="catalog.html" class="arrow-button arrow-button-down">
+                  <span class="visually-hidden">Вверх</span>
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/></g></svg>
+                    
+                </a>
+              </li>
+            </ul>       
           </section>
           <section class="catalog">
             <h2 class="visually-hidden">Список шаблонов</h2>
             <ul class="catalog-list">
-              <li class="catalog-item">
-                <div class="catalog-header">
-                  <div class="catalog-header-circle-1"></div>
-                  <div class="catalog-header-circle-2"></div>
-                  <div class="catalog-header-circle-3"></div>
-                </div>
-                <div class="catalog-item-image"> 
-                  <img src="img/layout-sedona.jpg" width="358" height="578" alt="Шаблон информационного сайта городка Седона">
-                </div>
+              <li class="catalog-item" tabindex="0">   
+                <img class="catalog-browser" src="img/browser.svg" width="360" height="40" alt="browser">              
+                <img src="img/layout-sedona.jpg" width="358" height="578" alt="Шаблон информационного сайта городка Седона">
                 <div class="catalog-category">
                   <h3 class="catalog-category-title"><a href="#">Sedona</a></h3>
-                  <p class="catalog-category-description">Информационный сайтдля туристов</p>
+                  <p class="catalog-category-description">Информационный сайт для туристов</p>
                   <a class="catalog-price" href="#">9900 &#8381;</a>
                 </div>
               </li>
-              <li class="catalog-item">
-                <div class="catalog-header">
-                  <div class="catalog-header-circle-1"></div>
-                  <div class="catalog-header-circle-2"></div>
-                  <div class="catalog-header-circle-3"></div>
-                </div>
-                <div class="catalog-item-image">
-                  <img src="img/layout-pink.jpg" width="358" height="578" alt="Шаблон приложения Pink для смартфонов">
-                </div>
+              <li class="catalog-item" tabindex="0">
+                <img class="catalog-browser" src="img/browser.svg" width="360" height="40" alt="browser">
+                <img src="img/layout-pink.jpg" width="358" height="578" alt="Шаблон приложения Pink для смартфонов">
                 <div class="catalog-category">
                   <h3 class="catalog-category-title"><a href="#">Pink App</a></h3>
                   <p class="catalog-category-description">Продуктовый лендинг приложений для iOS и Android</p>
                   <a class="catalog-price" href="#">9900 &#8381;</a>
                 </div>
               </li>
-              <li class="catalog-item">
-                <div class="catalog-header">
-                  <div class="catalog-header-circle-1"></div>
-                  <div class="catalog-header-circle-2"></div>
-                  <div class="catalog-header-circle-3"></div>
-                </div>
-                <div class="catalog-item-image">
-                  <img src="img/layout-borodinski.jpg" width="358" height="578" alt="Шаблон Барбершоп Бородинский">
-                </div>
+              <li class="catalog-item" tabindex="0"> 
+                <img class="catalog-browser" src="img/browser.svg" width="360" height="40" alt="browser">
+                <img src="img/layout-borodinski.jpg" width="358" height="578" alt="Шаблон Барбершоп Бородинский">
                 <div class="catalog-category">
                   <h3 class="catalog-category-title"><a href="#">Barbershop</a></h3>
                   <p class="catalog-category-description">Сайт салона красоты. Для мужчин, да.</p>
                   <a class="catalog-price" href="#">9900 &#8381;</a>
                 </div>
               </li>
-              <li class="catalog-item">
-                <div class="catalog-header">
-                  <div class="catalog-header-circle-1"></div>
-                  <div class="catalog-header-circle-2"></div>
-                  <div class="catalog-header-circle-3"></div>
-                </div>
-                <div class="catalog-item-image">
-                  <img src="img/layout-mishka.jpg" width="358" height="578" alt="Шаблон магазина ручной работы Mishka">
-                </div>
+              <li class="catalog-item" tabindex="0"> 
+                <img class="catalog-browser" src="img/browser.svg" width="360" height="40" alt="browser">
+                <img src="img/layout-mishka.jpg" width="358" height="578" alt="Шаблон магазина ручной работы Mishka">
                 <div class="catalog-category">
                   <h3 class="catalog-category-title"><a href="#">Mishka</a></h3>
                   <p class="catalog-category-description">Интернет-магазин вязанных игрушек</p>
                   <a class="catalog-price" href="#">9900 &#8381;</a>
                 </div>
               </li>
-              <li class="catalog-item">
-                <div class="catalog-header">
-                  <div class="catalog-header-circle-1"></div>
-                  <div class="catalog-header-circle-2"></div>
-                  <div class="catalog-header-circle-3"></div>
-                </div>
-                <div class="catalog-item-image">
-                  <img src="img/layout-aplus.jpg" width="358" height="578" alt="Шаблон  учебных курсов">
-                </div>
+              <li class="catalog-item" tabindex="0">  
+                <img class="catalog-browser" src="img/browser.svg" width="360" height="40" alt="browser">
+                <img src="img/layout-aplus.jpg" width="358" height="578" alt="Шаблон  учебных курсов">
                 <div class="catalog-category"> 
                   <h3 class="catalog-category-title"><a href="#">A Plus</a></h3>
                   <p class="catalog-category-description">Лендинг курсов повыщения квалификации</p>
                   <a class="catalog-price" href="#">9900 &#8381;</a>
                 </div>
               </li>
-              <li class="catalog-item">
-                <div class="catalog-header">
-                  <div class="catalog-header-circle-1"></div>
-                  <div class="catalog-header-circle-2"></div>
-                  <div class="catalog-header-circle-3"></div>
-                </div>
-                <div class="catalog-item-image"> 
-                  <img src="img/layout-kvass.jpg" width="358" height="578" alt="Шаблон  крафтового кваса">
-                </div> 
+              <li class="catalog-item" tabindex="0">  
+                <img class="catalog-browser" src="img/browser.svg" width="360" height="40" alt="browser"> 
+                <img src="img/layout-kvass.jpg" width="358" height="578" alt="Шаблон  крафтового кваса">
                 <div class="catalog-category">
                   <h3 class="catalog-category-title"><a href="#">Кваст</a></h3>
                   <p class="catalog-category-description">Промо-сайт производителя крафтового кваса</p>
