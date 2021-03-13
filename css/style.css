@@ -110,6 +110,19 @@ img {
     padding-top: 27px;
 }
 
+.site-navigation-current {
+    position: relative;
+}
+
+.site-navigation-current::after {
+    content: "";
+    position: absolute;
+    top: 43px;
+    right: 0;
+    left: 2px;
+    height: 2px;
+    background-color: var(--basic-soft-red);
+}
 .site-navigation li {
     margin-right: 45px;
 }
@@ -122,6 +135,7 @@ img {
 .user-navigation  {
     max-width: 114px;
     padding-top: 18px;
+    margin-left: 45px;
 }
 
 .cart-link::before {
@@ -419,9 +433,12 @@ img {
     background-color: var(--special-bright-red);
 }
 
+.button-market:active {
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgb(255, 255, 255, 0.3);
+}
 .button-red:active {
     background-color: var(--special-moderate-red);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-green:link {
@@ -435,7 +452,6 @@ img {
 
 .button-green:active {
     background-color: var(--special-dark-green);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-yellow:link {
@@ -449,7 +465,6 @@ img {
 
 .button-yellow:active {
     background-color: var(--special-vivid-orange);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 /* Index colums */
@@ -492,12 +507,24 @@ img {
 }
 
 .information-item {
+    position: relative;
     margin-bottom: 26px;
+    margin-left: 35px;
+}
+
+.information-item::before { 
+    content: "";
+    position: absolute;
+    display: block;
+    background: var(--basic-soft-red);
+    width: 25px; 
+    height: 1px;
+    top: 11px;
+    left: -35px;
 }
 
 .information-item:nth-last-child(1){
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0;
 }
 
 /* Statistics */
@@ -1384,25 +1411,56 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* modal */
-/*
 .modal {
     position: fixed;
     background-color: var(--basic-white);
-    top: 0;
+    top: 125px;
     right: 0;
-    bottom: 0;
+    bottom: auto;
     left: 0;
+    display: none;
     margin: auto;
-    width: 960px;
-    height: 590px;
+    width: 761px;
     background-position: 0 0;
     background-repeat: repeat;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    padding: 63px 99px 84px 100px;
+}
+
+.modal p {
+    padding: 0;
+    margin: 0;
 }
 
 .modal div {
-    padding: 63px 99px 84px 100px;
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 760px;
+    margin-bottom: 34px;
+}
+
+
+
+.modal-subtitle input{
+    width: 360px;
+    box-sizing: border-box;
+    padding: 16px 14px 16px 16px;
+    color: var(--basic-very-dark-grey);
+    border: 2px solid var(--basic-light-greyish-blue);
+}
+
+
+.modal-subtitle textarea {
+    width: 760px;
+    border: 2px solid #D7DCDE;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 47px;
+    
+}
+.modal-subtitle label {
+    display: block;
+    margin-bottom: 9px;
 }
 
 .modal-write {
@@ -1421,13 +1479,6 @@ input[type=number]::-webkit-outer-spin-button {
     color: var(--basic-black);
 }
 
-.modal-lead input{
-    box-sizing: border-box;
-    width: 360px;
-    padding: 16px 14px 16px 16px;
-    color: var(--basic-very-dark-grey);
-    border: 2px solid var(--basic-light-greyish-blue);
-}
 
 .modal-lead:hover {
     border: 2px solid var(--basiic-greyish-blue);
@@ -1437,16 +1488,10 @@ input[type=number]::-webkit-outer-spin-button {
     border: 2px solid var(--basic-black);
 }
 
-.modal-lead textarea {
-    box-sizing: border-box;
-    width: 760px;
-    padding: 16px 414px 84px 16px;
-    color: var(--basic-very-dark-grey);
-    border: 2px solid var(--basic-light-greyish-blue);
-
-}
 
 .modal-button {
+    display: inline-block;
+    vertical-align: middle;
     color: var(--basic-white);
     background-color: var(--basic-soft-red);
     font-weight: 500;
@@ -1454,5 +1499,38 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
+    width: 259px;
+    border: none;
+    border-radius: 3px;
+    padding:  17px 10px 15px 10px;
 }
 
+.button-close {
+    position: absolute;
+    top: 67px;
+    right: 101px;
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    border: 0;
+}
+
+.button-close::before,
+.button-close::after { 
+    content: "";
+    position: absolute;
+    top:10px;
+    left: 3px;
+    width: 19px;
+    height: 3px;
+    background-color: var(--basic-soft-red);
+    opacity: 0.3;
+}
+
+.button-close::before {
+    transform: rotate(45deg);
+  }
+  
+.button-close::after {
+    transform: rotate(-45deg);
+  }

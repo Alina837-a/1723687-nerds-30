@@ -258,22 +258,24 @@
 
   <section class="modal">
     <h2 class="modal-write">Напишите нам</h2>
-    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-      <label for="name">Ваше имя:</label>
-      <input class="modal-lead" id="name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-      <label for="email">Ваш email:</label>
-      <input class="modal-lead"  id="email" type="email" name="email" placeholder="email@example.com">
-      </p>
-      <p>
-      <label for="text">Текст письма:</label>
-      <textarea class="modal-lead" id="text" name="text" rows="5" placeholder="В свободной форме" ></textarea>
-      </p>
-      <button class="modal-button" type="submit">Отправить</button>
-    </form>
-    <button class="button-close" type="button">Закрыть</button>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <div>
+          <p class="modal-subtitle">
+            <label for="name">Ваше имя:</label>
+            <input class="modal-lead" id="name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal-subtitle">
+            <label for="email">Ваш email:</label>
+            <input class="modal-lead"  id="email" type="email" name="email" placeholder="email@example.com">
+          </p>
+        </div>
+        <p class="modal-subtitle">
+          <label for="text">Текст письма:</label>
+          <textarea class="modal-lead" id="text" name="text" rows="5" placeholder="В свободной форме" ></textarea>
+        </p>
+        <button class="modal-button" type="submit">Отправить</button>
+      </form>
+      <button class="button-close" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
 </html>
