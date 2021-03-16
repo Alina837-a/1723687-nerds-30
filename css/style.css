@@ -169,7 +169,6 @@ img {
 
 .main-header-logo:active {
     opacity: 0.3;
-
 }
 
 /* User navigation */
@@ -194,10 +193,10 @@ img {
 }
 
 .site-navigation a:active,
-.user-navigation a:active {
-    color: var(--basic-black);
-    opacity: 0.3;
+.user-navigation a:active{
+    color: rgba(0, 0, 0, 0.3);
 }
+
 
 /* page-main */
 
@@ -205,7 +204,7 @@ img {
 .page-main {
     width: 100%;
     margin: 0  auto;
-    padding-bottom: 81px;
+    padding-bottom: 83px;
 }
 
 
@@ -509,7 +508,7 @@ img {
 .index-columns {
     display: grid;
     grid-template-columns: 651px 360px;
-    column-gap: 146px;
+    column-gap: 148px;
     border-bottom: 2px solid var(--basic-light-grey);
     padding-bottom:  72px;
 }
@@ -623,7 +622,7 @@ img {
     font-weight: 700;
     font-size: 45px;
     line-height: 64px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .statistics-definition {
@@ -636,8 +635,6 @@ img {
 
 /* Model */
 .model {
-    padding-top: 50px;
-    padding-bottom: 39px;
     border-bottom: 2px solid var(--basic-light-grey);
 }
 
@@ -647,16 +644,20 @@ img {
 
 .model-list {
     display: grid;
-    column-gap: 95px;
     row-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 41px;
     list-style: none;
     margin: 0;
-    padding: 0;
-    margin-left: 34px;
+    padding: 49px 0 37px;
+    
 }
 
 .model-item  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     position: relative;
@@ -670,15 +671,15 @@ img {
     position: absolute;
     display: block;
     background: var(--basic-light-grey);
-    width: 2px; 
+    width: 3px; 
     height: 52px;
-    top: 12px;
-    left: 239px;
+    top: 13px;
+    left: 276px;
 }
 
 
 .model a:hover,
-.market a:focus{
+.model a:focus{
     opacity: 1;
 }
 
@@ -706,7 +707,7 @@ img {
 /* Page-catalog */
 
 .page-catalog {
-    padding-bottom: 59px;
+    padding-bottom: 61px;
 }
 
 /* Filtres*/
@@ -884,15 +885,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .filter-button:hover {
-    outline: none;
-    background-color: var(--special-very-light-gray);
+    background-color: var(--special-very-light-grey);
 }
 
 .filter-button:focus {
-    outline: none;
-    background-color: var(--special-light-gray);
+    background-color: var(--special-light-grey);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.3);
+    outline: none;
 }
 
 .filter-option {
@@ -973,10 +973,23 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .filter-checkbox-input + label:hover::before{opacity: 1;}
-.filter-checkbox-input:checked + label:hover::before{opacity: 1;}
-.filter-radio-input + label:hover::before{opacity: 1;}
 .filter-checkbox-input:checked + label:hover::after{opacity: 1;}
+.filter-radio-input + label:hover::before{opacity: 1;}
 .filter-radio-input:checked + label:hover:after{opacity: 1;}
+
+.filter-checkbox-input + label:disabled:hover:before{ 
+    background-color: rgba(83, 83, 83, 0.1);
+    color:rgba(40, 49, 54, 0.3);}
+.filter-checkbox-input:checked + label:disabled:hover{ 
+    background-color: rgba(83, 83, 83, 0.1);
+    color:rgba(40, 49, 54, 0.3);}
+.filter-radio-input + label:disabled:hover:before{ 
+    background-color: rgba(83, 83, 83, 0.1);
+    color:rgba(40, 49, 54, 0.3);}
+.filter-radio-input:checked + label:disabled:hover{ 
+    background-color: rgba(83, 83, 83, 0.1);
+    color:rgba(40, 49, 54, 0.3);}
+
 
 /*Sorting*/
 
@@ -1081,7 +1094,7 @@ input[type=number]::-webkit-outer-spin-button {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-bottom: 19px;
+    margin-bottom: 22px;
     list-style: none;
 }
 
@@ -1237,7 +1250,7 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative;
 }
 
-.map img{
+.map iframe{
     position: absolute;
     width: 100%;
     height: 416px;
@@ -1274,7 +1287,7 @@ input[type=number]::-webkit-outer-spin-button {
     text-transform: uppercase;
     padding: 0;
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
 }
 
 .contact-address {
@@ -1283,7 +1296,7 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 18px;
     margin: 0;
     padding: 0;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 }
 
 
@@ -1316,15 +1329,25 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
-    padding: 17px 44px 15px 44px;
+    padding: 18px 44px 15px 44px;
     border-radius: 3px;
+}
+
+.contacts-button:hover,
+.contacts-button:focus {
+    background-color: var(--special-bright-red);
+    border: 0;
+}
+
+.contacts-button:active {
+    background-color: var(--special-moderate-red);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .footer-social {
     display: grid;
     grid-template-columns: 260px 544px;
     column-gap: 140px;
-    padding-top: 75px;
     padding-bottom: 68px;
     margin-bottom: 8px;
 }
@@ -1335,11 +1358,16 @@ input[type=number]::-webkit-outer-spin-button {
     width: 260px;
     margin: 0;
     padding: 0;
+    padding-top: 70px;
     list-style: none;
 }
 
+.footer-social div {
+    padding-top: 75px;
+}
+
 .social-item {
-    margin-right: 8px;
+    margin-right: 13px;
 }
 
 .social-item.social-item:nth-of-type(3n){
@@ -1376,8 +1404,8 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 81px;
-    height: 81px;
+    width: 78px;
+    height: 78px;
     border-radius: 50%;
     background-color: var(--basic-very-light-grey);
     margin-bottom: 7px;
@@ -1390,7 +1418,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .social-button:active {
     background: linear-gradient(0deg, #D7373B, #D7373B);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1)
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    fill-opacity: 0.3;
 }
 
 /*Pagination*/
@@ -1409,9 +1438,13 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-black);
+    box-sizing: border-box;
     background-color: var(--basic-light-grey);
-    padding: 19px 17px 17px 22px;
+    padding-top: 16px;
+    text-align: center;
     border-radius: 3px;
+    width: 50px;
+    height: 50px;
 }
 
 .pagination-item-next a {
@@ -1439,7 +1472,6 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: var(--basic-white);
     border: 3px solid #DBDBDB;
     box-sizing: border-box;
-    padding: 16px 17px 14px 17px;
 }
 
 .pagination-item a:hover {
@@ -1456,14 +1488,19 @@ input[type=number]::-webkit-outer-spin-button {
 .modal {
     position: fixed;
     background-color: var(--basic-white);
-    z-index: 0;
-    top: 125px;
+    z-index: 1;
+    top: 50%;
     left: 50%;
-    transform:translateX(-50%);
+    transform:translate(-50%,-50%);
     display: none;
     width: 761px;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
     padding: 63px 99px 84px 100px;
+    cursor: pointer;
+}
+
+.modal-show {
+    display: block;
 }
 
 .modal p {
@@ -1477,8 +1514,6 @@ input[type=number]::-webkit-outer-spin-button {
     width: 760px;
     margin-bottom: 34px;
 }
-
-
 
 .modal-subtitle input{
     width: 360px;
@@ -1521,16 +1556,19 @@ input[type=number]::-webkit-outer-spin-button {
     color: var(--basic-black);
 }
 
-
 .modal-lead:hover {
     border: 2px solid var(--basiic-greyish-blue);
 }
 
 .modal-lead:focus {
     border: 2px solid var(--basic-black);
+    outline: none;
 }
-
-
+.modal input:focus:invalid,
+.modal input:not(:placeholder-shown):not(:focus):invalid {
+    border-color: var(--special-bright-red);
+    color: var(--special-bright-red);
+}
 .modal-button {
     display: inline-block;
     vertical-align: middle;
@@ -1546,6 +1584,23 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 3px;
     padding:  17px 10px 15px 10px;
 }
+
+.modal-button:hover,
+.modal-button:focus {
+    background-color: var(--special-bright-red);
+    outline: none;
+}
+
+.modal-button:active {
+    background-color: var(--special-moderate-red);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.modal-button:active {
+    color: rgb(255, 255, 255, 0.3);
+}
+
+
 
 .button-close {
     position: absolute;
@@ -1585,4 +1640,5 @@ input[type=number]::-webkit-outer-spin-button {
 .button-close:focus:before,
 .button-close:focus:after{
     opacity: 0.1;
+    border: 0;
 }
