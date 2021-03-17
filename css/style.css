@@ -208,7 +208,6 @@ img {
 }
 
 
-
 /* Features */
 
 .features-wrapper {
@@ -391,7 +390,7 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
     padding: 0;
-    column-gap: 100px;
+    grid-column-gap: 100px;
     list-style: none;
     margin-right: 58px;
 }
@@ -714,14 +713,24 @@ img {
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .filtres-container {
     display: grid;
     grid-template-columns: 260px 760px;
-    column-gap: 140px;
+    grid-column-gap: 140px;
     width: 1160px;
     margin: 0 auto;
     padding:0;
@@ -977,18 +986,21 @@ input[type=number]::-webkit-outer-spin-button {
 .filter-radio-input + label:hover::before{opacity: 1;}
 .filter-radio-input:checked + label:hover:after{opacity: 1;}
 
-.filter-checkbox-input + label:disabled:hover:before{ 
-    background-color: rgba(83, 83, 83, 0.1);
-    color:rgba(40, 49, 54, 0.3);}
-.filter-checkbox-input:checked + label:disabled:hover{ 
-    background-color: rgba(83, 83, 83, 0.1);
-    color:rgba(40, 49, 54, 0.3);}
-.filter-radio-input + label:disabled:hover:before{ 
-    background-color: rgba(83, 83, 83, 0.1);
-    color:rgba(40, 49, 54, 0.3);}
-.filter-radio-input:checked + label:disabled:hover{ 
-    background-color: rgba(83, 83, 83, 0.1);
-    color:rgba(40, 49, 54, 0.3);}
+.filter-radio-input:focus + label::before{ 
+    outline: 1px solid #231f20 ;
+}
+
+.filter-checkbox-input:focus + label::after{ 
+    outline: 2px solid #231f20;
+} 
+
+.filter-input:checked:disabled + label, 
+.filter-input:disabled + label,
+.filter-input:disabled:hover + label,
+.filter-input:disabled:focus + label {
+    color: rgba(40, 49, 54, 0.3);
+    background-color: rgba(77,77,77, 0.1) ;
+}
 
 
 /*Sorting*/
@@ -1250,6 +1262,7 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative;
 }
 
+.map img,
 .map iframe{
     position: absolute;
     width: 100%;
@@ -1347,7 +1360,7 @@ input[type=number]::-webkit-outer-spin-button {
 .footer-social {
     display: grid;
     grid-template-columns: 260px 544px;
-    column-gap: 140px;
+    grid-column-gap: 140px;
     padding-bottom: 68px;
     margin-bottom: 8px;
 }
@@ -1496,7 +1509,6 @@ input[type=number]::-webkit-outer-spin-button {
     width: 761px;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
     padding: 63px 99px 84px 100px;
-    cursor: pointer;
 }
 
 .modal-show {
@@ -1583,6 +1595,7 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
     border-radius: 3px;
     padding:  17px 10px 15px 10px;
+    cursor: pointer;
 }
 
 .modal-button:hover,
@@ -1610,6 +1623,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 21px;
     background-color: transparent;
     border: 0;
+    cursor: pointer;
 }
 
 .button-close::before,
