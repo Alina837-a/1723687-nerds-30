@@ -952,7 +952,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 23px;
     height: 23px;
     border: none;
-    background-image: url(../img/shape-1.svg);
+    background-image: url(../img/square.svg);
     opacity: 0.4;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -965,7 +965,7 @@ input[type=number]::-webkit-outer-spin-button {
     left: 5px;
     width: 21px;
     height: 17px;
-    background-image: url(../img/shape-2.svg);
+    background-image: url(../img/check-mark.svg);
     opacity: 0.4;
     background-repeat: no-repeat;
     background-position: 0 0;
